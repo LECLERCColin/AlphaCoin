@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+header{
+    position: fixed;
+    width: 100%;/*Ici on gère le header afin qu'il reste toujours en haut collé*/
+    height: 80px;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+h3, nav, #texte_decale{
+    color: white;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    
+
+}
+
+nav ul {
+
+    border: 2px solid black;
+    width: 100%;
+    display: flex;
+    background-color:black;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;  
+
+}
+
+li a{
+    margin: 0 0;
+    color: azure;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+
+
+nav li a {
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    padding: 0 10px;
+}
+
+nav ul li {
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: rgb(1, 214, 252);
+    border-bottom: 1px solid white;
+    line-height: 50px;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+
+nav > ul li:hover .sous{
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.sous a {
+    padding: 20px 0;
+    border-bottom: none;
+    font-size: 20px;
+}
+
+.sous a:hover{
+    border-bottom: none;
+    background-color: rgba(200, 200, 200, 0.1);
+}
+
+.deroulant > a::after{
+    content: " ▼";
+    font-size: 10px;
+}
+#image_sous_header {
+    display: flex;
+    width: 100%;
+    margin-top: 80px;/*L'image commence à la fin du header*/
+    position: relative;
+    height: auto; 
+    background-color: yellow; 
+    background: url(./image/fond.jpg);
+    background-size: cover;
+    vertical-align: middle; 
+    justify-content: space-around;
+}
+
+#image_sous_header img {
+    width: 200px;
+    height: auto;   
+}
+#top{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 80px;
+}
+.inter_image {
+    color: white;
+    width: 100vw;
+    height: auto;
+    top: 0;
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    
+}
+.titre{
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+    height: auto; 
+    background-color: black;
+}
+.inter_image:hover{
+    color: rgb(1, 214, 252);
+}
+#services{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.service{
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color:red;
+}
+.service:hover{
+    color:black;
+    background-color: white;
+}
+#bourse img {
+    width: 100%;
+    height: auto;
+    top: 0;
+}
+#partenaire{
+    width: 100%;
+    height: auto;
+    top: 0;
+}
+#conteneur{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    height:auto;
+}
+.actu{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 32%;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+    
+}
+.actu:hover{
+    box-shadow: 0px 0px 10px 5px rgb(1, 214, 252);
+}
+.actu:nth-child(1){
+    border-radius: 20px 0 0 0;   
+}
+.actu:nth-child(2){
+    border-radius: 0 0 20px 0;
+}
+#footer{
+    padding-top: 30px;
+    background-color:black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#footer h3:hover{
+    color: rgb(1, 214, 252);
+}
+#footer h3{
+    text-decoration: underline;
+}
